@@ -1,10 +1,10 @@
 <div align="center">
 
 <!-- Custom animated header — commit header.svg to repo root -->
-<img src="header.svg" alt="Scott Bishop — Frontend Developer" width="100%" />
+<img src="header.svg" alt="Scott Bishop — Software Engineer" width="100%" />
 
 <!-- Typing SVG cycles through projects -->
-[![Typing SVG](https://readme-typing-svg.demolab.com?font=DM+Sans&size=18&duration=3000&pause=1500&color=8B5CF6&center=true&vCenter=true&width=520&height=30&lines=Building+Elder+Brains+%E2%80%94+AI+portraits+for+D%26D;Building+Brain+Child+%E2%80%94+celebrating+childhood;No+accounts+required.+No+spell+components+either.)](https://elderbrains.com)
+[![Typing SVG](https://readme-typing-svg.demolab.com?font=DM+Sans&size=18&duration=3000&pause=1500&color=8B5CF6&center=true&vCenter=true&width=520&height=30&lines=Building+Elder+Brains+%E2%80%94+AI+portraits+for+D%26D;Building+Brain+Child+%E2%80%94+celebrating+childhood)](https://elderbrains.com)
 
 </div>
 
@@ -12,7 +12,7 @@
 
 ### 🧠 What I'm Building
 
-**[Elder Brains](https://elderbrains.com)** — AI character portrait generator for D&D and TTRPG players. Pick a style, describe your character, get a stunning portrait. No account required. From $1.
+**[Elder Brains](https://elderbrains.com)** — AI character portrait generator for D&D and TTRPG players. Pick a style, describe your character, get a stunning portrait. From $1.
 
 **[Brain Child](https://brainchild.app)** — Helping parents capture and celebrate childhood development *(in progress)*.
 
@@ -34,12 +34,6 @@
 </div>
 
 ---
-
-<div align="center">
-
-[![GitHub Stats](https://github-readme-stats.vercel.app/api?username=HuotChu&show_icons=true&count_private=true&bg_color=0A0A0F&title_color=8B5CF6&text_color=999999&icon_color=D4A574&border_color=1a1a2e&hide_rank=true)](https://github.com/HuotChu)
-
-</div>
 
 <div align="center">
 
