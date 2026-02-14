@@ -1,33 +1,63 @@
-<svg viewBox="0 0 800 200" xmlns="http://www.w3.org/2000/svg" width="100%">
+<svg viewBox="0 0 800 260" xmlns="http://www.w3.org/2000/svg" width="100%">
   <defs>
-    <linearGradient id="brandGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+    <!-- Full-width background gradient -->
+    <linearGradient id="bgGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#0A0A0F" />
+      <stop offset="100%" style="stop-color:#0A0A0F" />
+    </linearGradient>
+
+    <!-- Centered radial glow behind text -->
+    <radialGradient id="glow-bg" cx="50%" cy="45%" r="45%" fx="50%" fy="45%">
+      <stop offset="0%" style="stop-color:#8B5CF6;stop-opacity:0.12" />
+      <stop offset="50%" style="stop-color:#6D28D9;stop-opacity:0.06" />
+      <stop offset="100%" style="stop-color:#0A0A0F;stop-opacity:0" />
+    </radialGradient>
+
+    <!-- Text gradient — vertical: gold on top, purple on bottom -->
+    <linearGradient id="nameGrad" gradientUnits="userSpaceOnUse" x1="0" y1="60" x2="0" y2="112">
+      <stop offset="0%" style="stop-color:#D4A574" />
+      <stop offset="100%" style="stop-color:#8B5CF6" />
+    </linearGradient>
+
+    <!-- Accent line gradient — fully golden -->
+    <linearGradient id="lineGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#B07D4F" />
+      <stop offset="50%" style="stop-color:#D4A574" />
+      <stop offset="100%" style="stop-color:#C6975A" />
+    </linearGradient>
+
+    <!-- Bottom line gradient — fully purple -->
+    <linearGradient id="bottomGrad" x1="0%" y1="0%" x2="100%" y2="0%">
       <stop offset="0%" style="stop-color:#6D28D9" />
       <stop offset="50%" style="stop-color:#8B5CF6" />
-      <stop offset="100%" style="stop-color:#D4A574" />
+      <stop offset="100%" style="stop-color:#A78BFA" />
     </linearGradient>
 
+    <!-- Shimmer sweep -->
     <linearGradient id="shimmer">
       <stop offset="0%" style="stop-color:rgba(255,255,255,0)">
-        <animate attributeName="offset" values="-0.3;1" dur="3s" repeatCount="indefinite" />
+        <animate attributeName="offset" values="-0.4;1" dur="3.5s" repeatCount="indefinite" />
       </stop>
-      <stop offset="7%" style="stop-color:rgba(255,255,255,0.18)">
-        <animate attributeName="offset" values="-0.15;1.15" dur="3s" repeatCount="indefinite" />
+      <stop offset="8%" style="stop-color:rgba(255,255,255,0.22)">
+        <animate attributeName="offset" values="-0.2;1.2" dur="3.5s" repeatCount="indefinite" />
       </stop>
-      <stop offset="14%" style="stop-color:rgba(255,255,255,0)">
-        <animate attributeName="offset" values="0;1.3" dur="3s" repeatCount="indefinite" />
+      <stop offset="16%" style="stop-color:rgba(255,255,255,0)">
+        <animate attributeName="offset" values="0;1.4" dur="3.5s" repeatCount="indefinite" />
       </stop>
     </linearGradient>
 
-    <filter id="glow">
-      <feGaussianBlur stdDeviation="2.5" result="blur" />
+    <!-- Text glow filter -->
+    <filter id="textGlow" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur stdDeviation="4" result="blur" />
       <feMerge>
         <feMergeNode in="blur" />
         <feMergeNode in="SourceGraphic" />
       </feMerge>
     </filter>
 
-    <filter id="lineGlow">
-      <feGaussianBlur stdDeviation="3" result="blur" />
+    <!-- Line glow filter -->
+    <filter id="lineGlow" x="-10%" y="-200%" width="120%" height="500%">
+      <feGaussianBlur stdDeviation="5" result="blur" />
       <feMerge>
         <feMergeNode in="blur" />
         <feMergeNode in="SourceGraphic" />
@@ -38,72 +68,90 @@
   <style>
     .name {
       font-family: Georgia, 'Times New Roman', serif;
-      font-size: 46px;
+      font-size: 56px;
       font-weight: 700;
-      fill: url(#brandGrad);
+      fill: url(#nameGrad);
       opacity: 0;
-      animation: fadeUp 1s ease-out 0.2s forwards;
+      animation: fadeUp 1.2s ease-out 0.3s forwards;
     }
     .tagline {
       font-family: -apple-system, 'Segoe UI', Helvetica, sans-serif;
       font-size: 13px;
-      fill: #666666;
-      letter-spacing: 3px;
+      fill: #555555;
+      letter-spacing: 4px;
       opacity: 0;
-      animation: fadeUp 1s ease-out 0.7s forwards;
+      animation: fadeUp 1s ease-out 0.9s forwards;
     }
-    .line-group {
+    .line-wrap {
       opacity: 0;
-      animation: fadeUp 0.8s ease-out 0.45s forwards;
+      animation: lineReveal 1.2s ease-out 0.6s forwards;
     }
-    .dot1 { opacity: 0; animation: fadeUp 0.6s ease-out 0.9s forwards; }
-    .dot2 { opacity: 0; animation: fadeUp 0.6s ease-out 1.05s forwards; }
-    .dot3 { opacity: 0; animation: fadeUp 0.6s ease-out 1.2s forwards; }
-    .pulse1 { animation: pulse 3s ease-in-out infinite; }
-    .pulse2 { animation: pulse 3s ease-in-out 0.6s infinite; }
-    .pulse3 { animation: pulse 3s ease-in-out 1.2s infinite; }
+    .dot1 { opacity: 0; animation: fadeUp 0.6s ease-out 1.2s forwards; }
+    .dot2 { opacity: 0; animation: fadeUp 0.6s ease-out 1.35s forwards; }
+    .dot3 { opacity: 0; animation: fadeUp 0.6s ease-out 1.5s forwards; }
+    .p1 { animation: pulse 3.5s ease-in-out infinite; }
+    .p2 { animation: pulse 3.5s ease-in-out 0.7s infinite; }
+    .p3 { animation: pulse 3.5s ease-in-out 1.4s infinite; }
+    .glow-orb {
+      opacity: 0;
+      animation: glowIn 2s ease-out 0.1s forwards;
+    }
+    .bottom-line {
+      opacity: 0;
+      animation: widthReveal 1.5s ease-out 0.5s forwards;
+    }
+
     @keyframes fadeUp {
-      from { opacity: 0; transform: translateY(10px); }
+      from { opacity: 0; transform: translateY(14px); }
       to { opacity: 1; transform: translateY(0); }
     }
+    @keyframes lineReveal {
+      from { opacity: 0; transform: scaleX(0); }
+      to { opacity: 1; transform: scaleX(1); }
+    }
+    @keyframes glowIn {
+      from { opacity: 0; }
+      to { opacity: 1; }
+    }
+    @keyframes widthReveal {
+      from { opacity: 0; }
+      to { opacity: 1; }
+    }
     @keyframes pulse {
-      0%, 100% { opacity: 0.35; }
+      0%, 100% { opacity: 0.3; }
       50% { opacity: 1; }
     }
   </style>
 
-  <!-- Background -->
-  <rect width="800" height="200" fill="#0A0A0F" />
+  <!-- Dark base -->
+  <rect width="800" height="260" fill="#0A0A0F" />
 
-  <!-- Subtle dot grid texture -->
-  <pattern id="dots" x="0" y="0" width="32" height="32" patternUnits="userSpaceOnUse">
-    <circle cx="16" cy="16" r="0.5" fill="rgba(139,92,246,0.08)" />
+  <!-- Radial glow backdrop -->
+  <ellipse class="glow-orb" cx="400" cy="110" rx="350" ry="120" fill="url(#glow-bg)" />
+
+  <!-- Subtle noise texture via dots -->
+  <pattern id="grid" x="0" y="0" width="24" height="24" patternUnits="userSpaceOnUse">
+    <circle cx="12" cy="12" r="0.4" fill="rgba(139,92,246,0.05)" />
   </pattern>
-  <rect width="800" height="200" fill="url(#dots)" />
+  <rect width="800" height="260" fill="url(#grid)" />
 
   <!-- Name -->
-  <text x="400" y="80" text-anchor="middle" class="name" filter="url(#glow)">Scott Bishop</text>
+  <text x="400" y="108" text-anchor="middle" class="name" filter="url(#textGlow)">Scott Bishop</text>
 
   <!-- Accent line with shimmer -->
-  <g class="line-group">
-    <rect x="310" y="96" width="180" height="2" rx="1" fill="url(#brandGrad)" filter="url(#lineGlow)" />
-    <rect x="310" y="95.5" width="180" height="3" rx="1.5" fill="url(#shimmer)" />
+  <g class="line-wrap" transform-origin="400 130">
+    <rect x="290" y="126" width="220" height="2" rx="1" fill="url(#lineGrad)" filter="url(#lineGlow)" />
+    <rect x="290" y="125" width="220" height="4" rx="2" fill="url(#shimmer)" />
   </g>
 
   <!-- Tagline -->
-  <text x="400" y="130" text-anchor="middle" class="tagline">FRONTEND DEVELOPER</text>
+  <text x="400" y="165" text-anchor="middle" class="tagline">SOFTWARE ENGINEER</text>
 
-  <!-- Three pulsing dots in brand colors -->
-  <g class="dot1">
-    <circle cx="386" cy="155" r="2" fill="#A78BFA" class="pulse1" />
-  </g>
-  <g class="dot2">
-    <circle cx="400" cy="155" r="2.5" fill="#8B5CF6" class="pulse2" />
-  </g>
-  <g class="dot3">
-    <circle cx="414" cy="155" r="2" fill="#D4A574" class="pulse3" />
-  </g>
+  <!-- Three pulsing dots -->
+  <g class="dot1"><circle cx="386" cy="192" r="2" fill="#A78BFA" class="p1" /></g>
+  <g class="dot2"><circle cx="400" cy="192" r="2.5" fill="#8B5CF6" class="p2" /></g>
+  <g class="dot3"><circle cx="414" cy="192" r="2" fill="#D4A574" class="p3" /></g>
 
-  <!-- Bottom edge glow -->
-  <rect y="192" width="800" height="8" fill="url(#brandGrad)" opacity="0.06" />
+  <!-- Bottom gradient edge -->
+  <rect class="bottom-line" y="252" width="800" height="8" fill="url(#bottomGrad)" opacity="0.15" />
 </svg>
