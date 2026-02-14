@@ -12,7 +12,7 @@
 
 ### 🧠 What I'm Building
 
-**[Elder Brains](https://elderbrains.com)** — AI character portrait generator for D&D and TTRPG players. Pick a style, describe your character, get a stunning portrait. From $1.
+**[Elder Brains](https://elderbrains.com)** — AI character portrait generator for D&D and TTRPG players. Pick a style, describe your character, get a stunning portrait.
 
 **[Brain Child](https://brainchild.app)** — Helping parents capture and celebrate childhood development *(in progress)*.
 
@@ -30,6 +30,14 @@
 ![Stripe](https://img.shields.io/badge/Stripe-635BFF?style=flat-square&logo=stripe&logoColor=white)
 ![PostHog](https://img.shields.io/badge/PostHog-F54E00?style=flat-square&logo=posthog&logoColor=white)
 ![Tailwind](https://img.shields.io/badge/Tailwind-06B6D4?style=flat-square&logo=tailwindcss&logoColor=white)
+
+</div>
+
+---
+
+<div align="center">
+
+[![GitHub Stats](https://github-readme-stats.vercel.app/api?username=HuotChu&show_icons=true&count_private=true&bg_color=0A0A0F&title_color=8B5CF6&text_color=999999&icon_color=D4A574&border_color=1a1a2e&hide_rank=true)](https://github.com/HuotChu)
 
 </div>
 
