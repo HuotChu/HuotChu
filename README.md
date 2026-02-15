@@ -38,6 +38,6 @@
 <div align="center">
 
 [![Roll for Portrait](https://img.shields.io/badge/Roll_for_Portrait-rollforportrait.com-8B5CF6?style=for-the-badge&labelColor=0A0A0F)](https://rollforportrait.com)&nbsp;
-[![Brain Child](https://img.shields.io/badge/Brain_Child-brainchild.app-D4A574?style=for-the-badge&labelColor=2D1F1A)](https://brainchildapp.com)
+[![Brain Child](https://img.shields.io/badge/Brain_Child-brainchildapp.com-D4A574?style=for-the-badge&labelColor=2D1F1A)](https://brainchildapp.com)
 
 </div>
