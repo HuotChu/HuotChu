@@ -14,7 +14,7 @@
 
 **[Roll for Portrait](https://rollforportrait.com)** — AI character portrait generator for D&D and TTRPG players. Pick a style, describe your character, get a stunning portrait.
 
-**[Brain Child](https://brainchild.app)** — Helping parents capture and celebrate childhood development *(in progress)*.
+**[Brain Child](https://brainchildapp.com)** — Helping parents capture and celebrate childhood development *(in progress)*.
 
 ---
 
@@ -38,6 +38,6 @@
 <div align="center">
 
 [![Roll for Portrait](https://img.shields.io/badge/Roll_for_Portrait-rollforportrait.com-8B5CF6?style=for-the-badge&labelColor=0A0A0F)](https://rollforportrait.com)&nbsp;
-[![Brain Child](https://img.shields.io/badge/Brain_Child-brainchild.app-D4A574?style=for-the-badge&labelColor=2D1F1A)](https://brainchild.app)
+[![Brain Child](https://img.shields.io/badge/Brain_Child-brainchild.app-D4A574?style=for-the-badge&labelColor=2D1F1A)](https://brainchildapp.com)
 
 </div>
