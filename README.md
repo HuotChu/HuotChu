@@ -14,7 +14,7 @@
 **[Fidensa](https://fidensa.com)** — Fidensa independently certifies AI capabilities.
 
 ---
-
+<!--
 ### ⚡ Stack
 
 <div align="center">
@@ -29,3 +29,4 @@
 ![Tailwind](https://img.shields.io/badge/Tailwind-06B6D4?style=flat-square&logo=tailwindcss&logoColor=white)
 
 </div>
+-->
