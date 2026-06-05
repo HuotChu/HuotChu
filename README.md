@@ -1,7 +1,7 @@
 <div align="center">
 
 <!-- Custom animated header — commit header.svg to repo root -->
-<img src="header.svg" alt="Scott Bishop — Software Engineer" width="100%" />
+<!-- <img src="./header.svg" alt="Scott Bishop — Software Engineer" width="100%" /> -->
 
 <!-- Typing SVG cycles through projects -->
 [![Typing SVG](https://readme-typing-svg.demolab.com?font=DM+Sans&size=18&duration=3000&pause=1500&color=8B5CF6&center=true&vCenter=true&width=520&height=30&lines=Building+Roll+for+Portrait+%E2%80%94+AI+portraits+for+D%26D;Building+Brain+Child+%E2%80%94+celebrating+childhood)](https://elderbrains.com)
@@ -12,9 +12,8 @@
 
 ### 🧠 What I'm Building
 
-**[Roll for Portrait](https://rollforportrait.com)** — AI character portrait generator for D&D and TTRPG players. Pick a style, describe your character, get a stunning portrait.
+**[Fidensa](https://fidensa.com)** — Fidensa independently certifies AI capabilities.
 
-**[Brain Child](https://brainchildapp.com)** — Helping parents capture and celebrate childhood development *(in progress)*.
 
 ---
 
@@ -30,14 +29,5 @@
 ![Stripe](https://img.shields.io/badge/Stripe-635BFF?style=flat-square&logo=stripe&logoColor=white)
 ![PostHog](https://img.shields.io/badge/PostHog-F54E00?style=flat-square&logo=posthog&logoColor=white)
 ![Tailwind](https://img.shields.io/badge/Tailwind-06B6D4?style=flat-square&logo=tailwindcss&logoColor=white)
-
-</div>
-
----
-
-<div align="center">
-
-[![Roll for Portrait](https://img.shields.io/badge/Roll_for_Portrait-rollforportrait.com-8B5CF6?style=for-the-badge&labelColor=0A0A0F)](https://rollforportrait.com)&nbsp;
-[![Brain Child](https://img.shields.io/badge/Brain_Child-brainchildapp.com-D4A574?style=for-the-badge&labelColor=2D1F1A)](https://brainchildapp.com)
 
 </div>
