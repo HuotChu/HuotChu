@@ -1,19 +1,17 @@
+<!--
 <div align="center">
 
-<!-- Custom animated header — commit header.svg to repo root -->
-<!-- <img src="./header.svg" alt="Scott Bishop — Software Engineer" width="100%" /> -->
+<img src="./header.svg" alt="Scott Bishop — Software Engineer" width="100%" /> 
 
-<!-- Typing SVG cycles through projects -->
 [![Typing SVG](https://readme-typing-svg.demolab.com?font=DM+Sans&size=18&duration=3000&pause=1500&color=8B5CF6&center=true&vCenter=true&width=520&height=30&lines=Building+Roll+for+Portrait+%E2%80%94+AI+portraits+for+D%26D;Building+Brain+Child+%E2%80%94+celebrating+childhood)](https://elderbrains.com)
 
 </div>
 
 ---
-
+-->
 ### 🧠 What I'm Building
 
 **[Fidensa](https://fidensa.com)** — Fidensa independently certifies AI capabilities.
-
 
 ---
 
