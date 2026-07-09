@@ -11,9 +11,9 @@
 -->
 ### 🧠 What I'm Building
 
-**[Fidensa](https://fidensa.com)** — Fidensa independently certifies AI capabilities.
+[Fidensa](https://fidensa.com) — Fidensa independently certifies AI capabilities.
 
-**[Cartopian](https://github.com/fidensa/cartopian)** - Project management and governance protocol for AI-native development
+[Cartopian](https://github.com/fidensa/cartopian) - Project management and governance protocol for AI-native development
 
 ---
 <!--
